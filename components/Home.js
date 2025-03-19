@@ -14,7 +14,7 @@ function Home() {
     const fetchMovies = async () => {
       try {
         const response = await fetch(
-          "https://mymovies-backend-seven.vercel.app/movies"
+          "https://mymovies-backend-wheat.vercel.app/movies"
         );
         const data = await response.json();
         if (data.movies) {
