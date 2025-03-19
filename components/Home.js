@@ -13,7 +13,9 @@ function Home() {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const response = await fetch("http://localhost:3000/movies");
+        const response = await fetch(
+          "https://mymovies-backend-seven.vercel.app/movies"
+        );
         const data = await response.json();
         if (data.movies) {
           setMoviesData(data.movies); // Update movies data with API response
